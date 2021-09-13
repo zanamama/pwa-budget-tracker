@@ -13,6 +13,8 @@ const FILES_TO_CACHE = [
   "/service-worker.js",
 ];
 
+console.log("Hey you! This looks good.");
+
 self.addEventListener("install", function(evt) {
     evt.waitUntil(
       caches.open(CACHE_NAME).then(cache => {
@@ -24,7 +26,7 @@ self.addEventListener("install", function(evt) {
     self.skipWaiting();
   });
 
-  
+
   self.addEventListener("activate", function(evt) {
     evt.waitUntil(
       caches.keys().then(keyList => {
