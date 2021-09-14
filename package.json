@@ -28,6 +28,7 @@
     "morgan": "^1.9.1"
   },
   "devDependencies": {
+    "nodemon": "^2.0.12",
     "webpack": "^5.52.1",
     "webpack-cli": "^3.3.2"
   }
